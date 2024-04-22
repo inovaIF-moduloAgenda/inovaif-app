@@ -14,7 +14,7 @@ import { UserContext } from '../../Context/UserContext.jsx'
 import axios from 'axios';
 const ITEMS_PER_PAGE = 24;
 
-const baseURL = 'https://inova-if-api.vercel.app'
+const baseURL = 'https://inovaif-api.vercel.app'
 
 export default function EncontrosCadastrados(){
 

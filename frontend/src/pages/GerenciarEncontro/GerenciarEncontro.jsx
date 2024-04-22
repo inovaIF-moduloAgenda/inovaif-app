@@ -17,7 +17,7 @@ import Table from 'react-bootstrap/Table';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import ModalEditar from '../../components/ModalEditarEncontro/ModalEditarEncontro.jsx';
-const baseURL = 'https://inova-if-api.vercel.app'
+const baseURL = 'https://inovaif-api.vercel.app'
 const ITEMS_PER_PAGE = 20;
 export default function GerenciarEncontro(){
   const { user, setUser } = useContext(UserContext);

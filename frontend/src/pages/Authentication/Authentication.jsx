@@ -11,7 +11,7 @@ import { UserContext } from '../../Context/UserContext.jsx'
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
-const baseURL = 'https://inova-if-api.vercel.app'
+const baseURL = 'https://inovaif-api.vercel.app'
 
 export default function Authentication(){
   const navigate = useNavigate();

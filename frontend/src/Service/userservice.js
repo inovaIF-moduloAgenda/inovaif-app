@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = "https://inova-if-api.vercel.app";
+const baseURL = "https://inovaif-api.vercel.app";
 
 
 export function userLogged(){
