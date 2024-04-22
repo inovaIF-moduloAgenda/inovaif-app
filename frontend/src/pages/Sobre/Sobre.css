@@ -1,0 +1,36 @@
+.section-sobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+}
+.h1-sobre{
+    color:#004D2A;
+    font-weight: bold;
+    text-align: center;
+}
+.box-sobre{
+    text-align: justify;
+    margin: auto;
+    width: 80%;
+}
+.box-sobre img{
+    width: 190px;
+    float: left;
+}
+.box-sobre p {
+    max-width: 100%;
+    font-size: 18px;
+    margin-top: 30px;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.a-sobre{
+     border-radius: 5px;
+     margin-bottom: 50px;
+     margin-top: 20px;
+}
+.a-sobre a{
+    text-decoration: none;
+    color: #fff;
+}

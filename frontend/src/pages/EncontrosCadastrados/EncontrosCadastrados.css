@@ -1,0 +1,18 @@
+.card-container{
+    width: 23.3rem;
+    min-height: 550px;
+
+
+}
+.card-titulo{
+    font-weight: bold;
+}
+.card-footer{
+    background:#004d2a;
+     color:#fff;
+}
+.card-container span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #2051a0;
+}

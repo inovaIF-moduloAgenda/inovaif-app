@@ -1,0 +1,73 @@
+/***************** navbar ******************/
+.navStyle, .offcanvas{
+    background-color: #004D2A !important;
+    color: #fff;
+}
+.navbar-toggler{
+    border: 1px solid #004d2a;
+}
+.navbar-toggler-icon {
+    color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navStyle{
+    padding: 10px;
+}
+.logo-inova{
+padding-left: 9px;
+
+}
+.dropdown-left .dropdown-menu {
+    left: auto !important;
+    right:0;
+  }
+
+.avatar-perfil{
+    width: 55px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: transparent;
+      margin-left:15px;
+      padding: 5px 2px;
+      
+}
+.avatar-perfil:hover, .avatar-perfil:active, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color: #017501;
+    border-color: #fff;
+}
+
+.nav-link, .nav-link.show, .nav-link:hover, .nav-link:focus{
+    color: #ffff;
+}
+.btn-group{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-group>.btn, .btn-group>.btn:focus{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.user-img{
+    width: 20px; 
+}
+.bi-box-arrow-right{
+    font-size: 18px;
+    font-weight: bold;
+    color: #004D2A;
+    margin-right: 10px;
+}
+button:focus:not(:focus-visible){
+    outline: none;
+}
+.bi-house-door, .bi-mortarboard, .bi-card-list, .bi-card-text{
+    margin-right: 10px;
+    background-color: #004d2a91 ;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 8px;
+}

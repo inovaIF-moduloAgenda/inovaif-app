@@ -1,0 +1,8 @@
+.container-homeProfessor{
+    min-height: 90vh;
+}
+.btn-homeProfessor{
+    width: 50%;
+    background-color: #004d2a;
+    font-weight: bold;
+}

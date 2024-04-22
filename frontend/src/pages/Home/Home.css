@@ -1,0 +1,33 @@
+/* .box-container{
+    
+} */
+.pastas-inicio{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 93%;
+    height: 250px;
+    max-height: 500px;
+    background-color: #ffff;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.bi-folder-fill{
+    font-size: 100px;
+}
+.h2-home, .h3-home{
+    color: #004d2a;
+    font-weight: bold;
+}
+
+.p-home{
+    text-align: justify;
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.btn2-home{
+    font-weight: bold;
+    background-color: #004d2a;
+    width: 43%;
+    
+}

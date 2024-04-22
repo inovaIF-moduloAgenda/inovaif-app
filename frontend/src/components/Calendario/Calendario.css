@@ -1,0 +1,18 @@
+a {
+    color:#004d2a ;
+    text-decoration: none;
+}
+.popover-header{
+    background-color: #004d2a;
+    color: #fff;
+    text-transform: capitalize;
+}
+.fc .fc-bg-event{
+    opacity: 1;
+}
+ h6{
+    text-transform: capitalize;
+}
+.bi-caret-down-fill{
+    font-size: 10px;
+}

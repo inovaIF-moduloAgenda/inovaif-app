@@ -1,0 +1,48 @@
+.container-meu-cadastro{
+    min-height: 85vh;
+}
+.box-my-encontros{
+    background-color: #fff;
+    min-height: 80vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+.h1, .h1-cadastrados{
+    color:#004d2a;
+    text-align: center;
+    margin:35px;
+}
+.h2-cadastro{
+    font-size: 22px;
+    font-weight: bold;
+    color: #004d2a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.modal-button{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+li button#controlled-tab-example-tab-lista, li button#controlled-tab-example-tab-meuCadastros{
+    color:#000;
+}
+td, th{
+    text-align: center;
+    vertical-align: middle;
+}
+.bi-trash-fill{
+    color: #f50505;
+    font-size: 20px;
+}
+.bi-pencil-square, .bi-person-check-fill, .bi-person-plus-fill{
+    color:#004d2a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 500px){
+    .container-meu-cadastro{
+        min-width: 400px;
+    }
+}

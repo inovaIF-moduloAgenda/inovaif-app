@@ -1,0 +1,55 @@
+
+/* .componentImg{
+    width:500px;
+} */
+.container-cadastrar{
+    background-color: #fff;
+    /* max-width: 85%; */
+    height: auto;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+.h1-homeProfessor{
+    color: #004d2a;
+    font-weight: bold;
+}
+
+.btn-homeProfessor button{
+    font-weight: bold;
+    width: 100px;
+}
+
+.radioCadastro-check input[type="radio"] {
+	margin: 5px;
+	border:0.5px solid #004d2a8a;
+	background-color: transparent;
+}
+.radioCadastro-check input[type="radio"]:checked{
+	background-color: #004d2a;
+}
+.sala_encontro{
+    width: 220px;
+    min-width: 120px;
+}
+
+@media (max-width: 600px){
+    .container-cadastrar{
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cadastrar .row{
+       
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 740px){
+    .container-cadastrar .row{
+       
+        display: flex;
+        flex-direction: column;
+    }
+}
