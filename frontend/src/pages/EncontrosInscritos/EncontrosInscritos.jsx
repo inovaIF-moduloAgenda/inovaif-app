@@ -26,7 +26,7 @@ export default function EncontrosInscritos(){
       const response = await userLogged();
       setUser(response.data);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
    }
    useEffect(() => {
@@ -42,7 +42,7 @@ export default function EncontrosInscritos(){
           try {
             const response = await axios.get(`${baseURL}/inscricao/inscritos/${user.id_aluna}/${dataHoje}`);  
             setEncontrosInscrito(response.data.data);
-            console.log(response)
+     
             if(response.data.msg == "Não há inscrições realizadas pelo usuário"){
               toast.info("Não há encontros inscritos!")
 
@@ -73,7 +73,7 @@ export default function EncontrosInscritos(){
             const updatedEncontrosInscritos = encontrosInscrito?.filter(item => item.id_inscricao !== id_inscricao);
             setEncontrosInscrito(updatedEncontrosInscritos);
           } catch (error) {
-            // console.error(error);
+           
             toast.error("Ocorreu um erro ao excluir inscrição, tente novamente");
             
           }

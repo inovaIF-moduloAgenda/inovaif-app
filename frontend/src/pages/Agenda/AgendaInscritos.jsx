@@ -13,27 +13,12 @@ const baseURL = 'https://inovaif-api.vercel.app'
 
 export default function AgendaInscritos(){
   const { user } = useContext(UserContext);
-
-    //   async function findUserLoggedAluno(){
-    //     try {
-    //       const response = await userLogged();
-    //       setUser(response.data);
-    //     } catch (error) {
-    //       console.log(error);
-    //     }
-    //   }
-    //   useEffect(() => {
-    //     if (localStorage.getItem("token")) findUserLoggedAluno();
-    //   }, []);
-
-     
       const[dataEncontroInscrito, setDataEncontroInscrito] = useState([]);
 
       useEffect(() =>{
         const fetchDataEncontroInscrito = async() => {
           try{
             const response = await axios.get(`${baseURL}/agenda/dataInscrito/${user.id_aluna}`);
-            // console.log(response)
             setDataEncontroInscrito(response.data.data)
             if(response.data.msg == "Não há encontros inscritos agendado"){
               toast.info("Não há encontros inscritos")

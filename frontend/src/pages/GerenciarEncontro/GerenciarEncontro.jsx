@@ -4,7 +4,6 @@ import Container from "react-bootstrap/esm/Container";
 import { useEffect, useState, useContext} from 'react';
 import { toast } from 'react-toastify';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Footer from "../../components/Footer/Footer";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Paginacao from '../../components/Paginacao/Paginacao.jsx';
@@ -26,7 +25,7 @@ export default function GerenciarEncontro(){
       const response = await userLoggedProf();
       setUser(response.data);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
    }
    useEffect(() => {
@@ -91,7 +90,7 @@ export default function GerenciarEncontro(){
               setAllAluno(response.data.data);
 
           } catch (error) {
-            // console.error('Erro ao recuperar dados:', error);
+         
             toast.error('Ocorreu um erro ao conectar com servidor, tente novamente mais tarde')
   
            }

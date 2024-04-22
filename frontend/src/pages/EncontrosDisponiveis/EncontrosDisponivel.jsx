@@ -29,7 +29,7 @@ export default function EncontrosDisponivel(){
       const response = await userLogged();
       setUser(response.data);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
    }
    useEffect(() => {
@@ -85,7 +85,7 @@ export default function EncontrosDisponivel(){
               toast.error("Não há mais vagas nesse encontro!");
             }
           } catch (error) {
-            console.error(error);
+    
             toast.error("Ocorreu um erro ao fazer inscrição, tente novamente");
           }
         }

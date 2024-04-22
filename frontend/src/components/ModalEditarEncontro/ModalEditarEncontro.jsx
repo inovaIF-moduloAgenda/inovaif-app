@@ -90,7 +90,6 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
               const response = await axios.get(`${baseURL}/aprendizagem/getObjetivo/${inputs.id_area_conhecimento}`);
               setObjAprendizagem(response.data.data);
             } catch (error) {
-              // console.error("Ocorreu uma erro ao conectar no servidor.");
               toast.error("Ocorreu um erro ao conectar no servidor.");
             }
           };
@@ -105,7 +104,6 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
             const response = await axios.get(`${baseURL}/aprendizagem/getEtapa/${selectedObjAprendizagem}`);
             setObjAprenEtapa(response.data.data);
           } catch (error) {
-            // console.error("Ocorreu uma erro ao conectar no servidor.");
             toast.error("Ocorreu uma erro ao conectar no servidor.");
           }
         };
@@ -151,7 +149,6 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
               toast.success("Atualização realizada com sucesso!")
               onUpdateEncontro(response.data.data);
           } catch (err) {
-            // console.error("Ocorreu uma erro ao conectar no servidor.");
             toast.error("Ocorreu um erro ao atualizar encontro, tente novamente")
           }
 

@@ -28,21 +28,14 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
       const fetchAlunoInscritosEncontro = async () => {
         try {
           const response = await axios.get(`${baseURL}/inscricao/listInscritos/${userProf}/${encontroId}`); 
-          // console.log(response);
-
           setListAlunoInscrito(response.data.data);
         } catch (error) {
-          // console.error('Erro ao recuperar dados:', error);
           toast.error('Ocorreu um erro ao conectar com servidor, tente novamente mais tarde')
          }
       }
       fetchAlunoInscritosEncontro();
     }
-      }, [modalListOpen, encontroId, userProf]);
-
-      
-
-        
+      }, [modalListOpen, encontroId, userProf]); 
         const removerAluno = async(id_inscricao)=>{
           if(window.confirm("Tem certeza que deseja remover?")){
               try {
@@ -52,8 +45,7 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
                   setListAlunoInscrito(updatedlistInscrito);
                 
               } catch (error) {
-                  toast.error("Ocorreu um erro ao remover aluno, tente novamente mais tarde!")
-                  
+                  toast.error("Ocorreu um erro ao remover aluno, tente novamente mais tarde!")              
               } 
           }else{
               return;
@@ -62,22 +54,14 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
         }
             //variaveis para paginação
             const [alunoEncontroCurrentPage, setAlunoEncontroCurrentPage] = useState(1);
-            
-
             const alunoEncontroTotalPages = Math.ceil(listAlunoInscrito?.length / ITEMS_PER_PAGE);
-            
             const alunoEncontroPaginatedData = listAlunoInscrito?.slice(
             (alunoEncontroCurrentPage - 1) * ITEMS_PER_PAGE,
             alunoEncontroCurrentPage * ITEMS_PER_PAGE
             );
-
-           
-
             const handleAlunoEncontroPageChange = (page) => {
               setAlunoEncontroCurrentPage(page);
             };
-
-
     return(
         <>
           <Modal    

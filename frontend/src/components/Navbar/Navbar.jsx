@@ -15,17 +15,14 @@ import { userLogged } from "../../Service/userservice.js";
 import { UserContext } from '../../Context/UserContext.jsx'
 
 
-
 export function NavbarC(){
   const { user, setUser } = useContext(UserContext);
     async function findUserLoggedAluno(){
       try {
         const response = await userLogged();
         setUser(response.data);
-        
-     
+    
       } catch (error) {
-        console.log(error);
         navigate("/");
         localStorage.removeItem("token");
         setUser(undefined);

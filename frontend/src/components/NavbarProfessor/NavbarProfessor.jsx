@@ -22,7 +22,7 @@ export function NavbarProfessor(){
         const response = await userLoggedProf();
         setUser(response.data);
       } catch (error) {
-        console.log(error);
+     
         navigate("/");
         localStorage.removeItem("token");
         setUser(undefined);

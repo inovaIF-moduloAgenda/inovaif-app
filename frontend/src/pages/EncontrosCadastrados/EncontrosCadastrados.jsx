@@ -32,7 +32,7 @@ export default function EncontrosCadastrados(){
             }
             
           } catch (error) {
-            // console.error('Erro ao recuperar dados:', error);
+    
             toast.error('Ocorreu um erro ao conectar com servidor, tente novamente mais tarde')
           }
         };
