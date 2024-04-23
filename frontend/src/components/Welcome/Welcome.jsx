@@ -14,7 +14,7 @@ export default function Welcome({ children }){
             <div className=''>
                 <h5 className='ps-1 mb-3 h5-welcome'>Seja Bem-vindo ao</h5>
                 <h1 className='welcome-titulo'>InovaIF</h1>
-                <p className='mt-4 ps-1 p-welcome'> O InovaIF vem como uma ferramenta que simplifica significativamente o agendamento e a gestão de compromissos acadêmicos, permitindo aos estudantes inscreverem-se em encontros com apenas alguns cliques. Ao eliminar a necessidade de comunicação manual ou agendamento presencial, o sistema agiliza todo o processo, tornando-o mais conveniente e acessível para alunas e professoras. Além disso, essa funcionalidade promove uma melhor organização e transparência, ao oferecer uma visão centralizada de todos os encontros disponíveis e das inscrições realizada pelo o estudante, facilitando o acompanhamento e a participação ativa nos encontros. </p>
+                <p className='mt-4 ps-1 p-welcome'> O InovaIF vem como uma ferramenta que simplifica significativamente o agendamento e a gestão de compromissos acadêmicos, permitindo às estudantes se inscreverem em encontros com apenas alguns cliques. Ao eliminar a necessidade de comunicação manual ou agendamento presencial, o sistema agiliza todo o processo, tornando-o mais conveniente e acessível para alunas e professoras. Além disso, essa funcionalidade promove uma melhor organização e transparência, ao oferecer uma visão centralizada de todos os encontros disponíveis e das inscrições realizadas pela estudante, facilitando o acompanhamento e a participação ativa nos encontros. </p>
                 {children}
             </div>
             </Col>
