@@ -9,22 +9,24 @@ import Welcome from "../../components/Welcome/Welcome";
 import CalenderHome from '../../assets/Img/CalenderHome.png'
 import Footer from '../../components/Footer/Footer';
 import { useEffect, useContext} from 'react';
-import { userLoggedProf } from "../../Service/userservice.js";
+// import { userLoggedProf } from "../../Service/userservice.js";
+import { userLogged } from "../../Service/userservice.js";
 import { UserContext } from '../../Context/UserContext.jsx'
 
   export default function Home(){
           const { user, setUser } = useContext(UserContext);
-          async function findUserLoggedProf(){
-            try {
-              const response = await userLoggedProf();
-              setUser(response.data);
-            } catch (error) {
-              // console.log(error);
-            }
-          }
-          useEffect(() => {
-            if (localStorage.getItem("token")) findUserLoggedProf();
-          }, []);
+            async function findUserLoggedAluno(){
+        try {
+          const response = await userLogged();
+          setUser(response.data);
+        } catch (error) {
+          // console.log(error);
+        }
+      }
+      useEffect(() => {
+        if (localStorage.getItem("token")) findUserLoggedAluno();
+      }, []);
+
 
     return (
     <>

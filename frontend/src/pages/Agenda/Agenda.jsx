@@ -14,6 +14,17 @@ const baseURL = 'https://inovaif-api.vercel.app'
 
 export default function Agenda(){
   const { user } = useContext(UserContext);
+     // async function findUserLoggedAluno(){
+      //   try {
+      //     const response = await userLogged();
+      //     setUser(response.data);
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
+      // }
+      // useEffect(() => {
+      //   if (localStorage.getItem("token")) findUserLoggedAluno();
+      // }, []);
 
       const[dataEncontroDisponivel, setDataEncontroDisponivel] = useState([]);
 
