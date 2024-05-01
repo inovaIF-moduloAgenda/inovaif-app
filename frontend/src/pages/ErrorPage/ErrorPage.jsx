@@ -13,11 +13,11 @@ export default function ErrorPage() {
       <h4 className="h4-errorPage">INTERNAL SERVER ERROR</h4>
       <h1 className="h1-errorPage">500</h1>
       <p className="p-errorPage mt-4">Oops! Ocorreu algo inesperado. Alguma coisa não esta funcionado corretamente.</p>
-      <p className="p-errorPage mb-4">Por favor, entre em contato com o adiministrador</p>
+      <p className="p-errorPage mb-4">Por favor, entre em contato com o administrador</p>
       <p>
         {/* <i>{error.statusText || error.message}</i> */}
       </p>
-      <button className="a-errorPage"><a href="/" >Voltar para o inicío</a></button>
+      <button className="a-errorPage"><a href="/" >Voltar para o início</a></button>
       </div>
       
     </div>

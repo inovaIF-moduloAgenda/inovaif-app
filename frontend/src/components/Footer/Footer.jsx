@@ -8,7 +8,7 @@ export default function Footer(){
                 IFB | 2024
             </div>
             <div>
-                &copy; Desenvolvido por Fernanda Borges e Aline Moura
+                &copy; Desenvolvido por <a className='a-footer' href='https://github.com/fernanda-borg3s' target='_blank'>Fernanda Borges</a> e Aline Moura
             </div>
             <div>
                 INOVAIF

@@ -12,3 +12,9 @@
 .footer div:nth-child(2){
     text-align: center;
 }
+.footer div:nth-child(2) .a-footer{
+    color:#fff;
+}
+.footer div:nth-child(2) .a-footer:hover{
+    color:#02ca70;
+}
