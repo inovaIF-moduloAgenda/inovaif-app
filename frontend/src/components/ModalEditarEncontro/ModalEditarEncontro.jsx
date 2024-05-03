@@ -204,17 +204,12 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
                           name="id_area_conhecimento" 
                           value={inputs.id_area_conhecimento}
                           disabled>
-                              <option value="1">Base de Autonomia e Emancipação</option>
                               <option value="2">Ciências da Natureza e suas Tecnologias </option>
                               <option value="3">Ciências Humanas e Sociais Aplicadas </option>
                               <option value="4">Conhecimentos da Área Técnica </option>
                               <option value="5">Língua Portuguesa e suas Literaturas </option>
                               <option value="6">Linguagens e suas Tecnologias </option>
                               <option value="7">Matemática e suas Tecnologias </option>
-                              <option value="8">Oficina de Línguas Estrangeiras </option>
-                              <option value="9">Oficinas da Área Técnica </option>
-                              <option value="10">Oficinas Livres do Ensino Médio</option>
-                              <option value="11">Projetos Integradores </option>
                         </Form.Select>
                             </Form.Group>
                             <Form.Group as={Col} controlId="id_componente_curricular">
@@ -233,8 +228,6 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
                                     <option value="7">Física</option>
                                     <option value="8">Geografia</option>
                                     <option value="9">História</option>
-                                    <option value="10">Língua Espanhola e suas literaturas</option>
-                                    <option value="11">Língua Inglesa e suas literaturas</option>
                                     <option value="12">Língua Portuguesa e suas literaturas</option>
                                     <option value="13">Matemática</option>
                                     <option value="14">Música</option>
@@ -244,7 +237,14 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
                             </Form.Group>
                             </Row>
                 
-                        <Row className="mb-3">   
+                        <Row className="mb-3">  
+                        <Form.Group as={Col} controlId="descricao">                     
+                              <Form.Label>Descrição do Encontro:</Form.Label>
+                              <Form.Control as="textarea" placeholder="Descrição" name="descricao_encontro" 
+                              
+                              value={inputs.descricao_encontro}
+                              onChange={onChange} />
+                            </Form.Group> 
                             <Form.Group as={Col} controlId="criterios_avaliacao">
                               <Form.Label>Critérios de Avaliação:</Form.Label>
                                 <Form.Control as="textarea" placeholder="Critérios de Avaliação" 
@@ -253,13 +253,7 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
                                 onChange={onChange} />
                             </Form.Group>
 
-                            <Form.Group as={Col} controlId="descricao">                     
-                              <Form.Label>Descrição do Encontro:</Form.Label>
-                              <Form.Control as="textarea" placeholder="Descrição" name="descricao_encontro" 
-                              
-                              value={inputs.descricao_encontro}
-                              onChange={onChange} />
-                            </Form.Group>
+                            
                         </Row>
                           
                         <Row className="mb-3">
@@ -290,23 +284,7 @@ export default function ModalEditarEncontro({ showEdit, modalOpen, dataEncontro,
                             </Form.Group>
                         </Row>
             
-                        <Row className="mb-3">
-                        {/* <Form.Group as={Col} controlId="tipo_objetivos">
-                                <Form.Label>Tipo de Objetivo:</Form.Label>
-                            <Form.Select >
-                            <option value="">{inputs.tipo_objetivos}</option>
-                                    {objAprendizagem?.filter((aprendizagem, index, self) => 
-                                    index === self.findIndex((t) => t.tipo_objetivos === aprendizagem.tipo_objetivos)
-                                    )
-                                    .map((aprendizagem) => (
-                                    <option key={aprendizagem.id_tipo_objetivos} value={aprendizagem.id_tipo_objetivos}>
-                                        {aprendizagem.tipo_objetivos}
-                                    </option>
-                                    ))
-                                }
-                                  </Form.Select> 
-                            </Form.Group>   */}
-                        
+                        <Row className="mb-3">                
                             <Form.Group as={Col} controlId="objetivos_aprendizagem" className="">
                                 <Form.Label>Objetivo De aprendizagem:</Form.Label>
                                 <Form.Select disabled
