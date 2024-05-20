@@ -215,7 +215,7 @@ export default function Authentication(){
             </div>
         </div>
         <Image src={LogoLogin} style={{width:'190px'}} className="mt-3"/>
-        <a href="/sobre" className="link-sobre">Clique aqui e saiba mais <span>INOVA IF - Módulo Agenda</span></a>
+        <a href="/sobre" className="link-sobre">Clique aqui e saiba mais <span>INOVAIF - Módulo Agenda</span></a>
         </Container>
         </>
     )
