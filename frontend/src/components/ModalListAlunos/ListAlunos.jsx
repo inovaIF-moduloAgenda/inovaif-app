@@ -40,12 +40,12 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
           if(window.confirm("Tem certeza que deseja remover?")){
               try {
                   const response = await axios.delete(`${baseURL}/inscricao/deleteinscricao/${id_inscricao}`);
-                  toast.success("Aluna(o) removido do encontro!")
+                  toast.success("Aluna removida do encontro!")
                   const updatedlistInscrito = listAlunoInscrito.filter(item => item.id_inscricao !== id_inscricao);
                   setListAlunoInscrito(updatedlistInscrito);
                 
               } catch (error) {
-                  toast.error("Ocorreu um erro ao remover aluno, tente novamente mais tarde!")              
+                  toast.error("Ocorreu um erro ao remover aluna, tente novamente mais tarde!")              
               } 
           }else{
               return;
@@ -72,7 +72,7 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
             show={show} 
             >
               <Modal.Header >
-                  <Modal.Title>Alunas(os) inscritos no encontro - "{titulo_encontro}"</Modal.Title>
+                  <Modal.Title>Alunas inscritas no encontro - "{titulo_encontro}"</Modal.Title>
               </Modal.Header>
               <Modal.Body>
               <p>Data de Início: {data_inicio} / Horário: {hora_inicio} até {hora_fim}</p>
@@ -102,7 +102,7 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
                             ))
                         ) : (
                                 <tr>
-                                  <td colSpan={5}>Não há inscritos nesse encontro...</td>
+                                  <td colSpan={5}>Não há inscritas nesse encontro...</td>
                                 </tr>
                           )}
                       </tbody>

@@ -46,7 +46,7 @@ export default function AddAluno({idEncontro, tituloModal, modalAddOpen, showAdd
           const response2 = await axios.get(`${baseURL}/inscricao/conferirHorario/${id_aluna}/${horaInicio}/${dataInicio}`);
               const mesmoHorario = response2.data.data;
               if (Number(mesmoHorario[0]) > 0) {
-                toast.error("A aluna(o) já tem encontro para essa mesma data e horário");
+                toast.error("A aluna já tem encontro para essa mesma data e horário");
                 return
               } else {
                 const body = {id_encontro, id_aluna};
@@ -57,13 +57,13 @@ export default function AddAluno({idEncontro, tituloModal, modalAddOpen, showAdd
                 }
                 );
         
-                toast.success("Aluna(o) adicionado ao encontro!")
+                toast.success("Aluna adicionada ao encontro!")
                 const updatedNewAluno = alunoExceptInscrito.filter(item => item.id_aluna !== id_aluna);
                 setAlunoExceptInscrito(updatedNewAluno);
         }
             
         } catch (error) {
-          toast.error("Ocorreu um erro ao adicionar aluno ao encontro, tente novamente mais tarde")
+          toast.error("Ocorreu um erro ao adicionar aluna ao encontro, tente novamente mais tarde")
         }
       }
       const [alunoExceptCurrentPage, setAlunoExceptCurrentPage] = useState(1);
@@ -88,7 +88,7 @@ export default function AddAluno({idEncontro, tituloModal, modalAddOpen, showAdd
             >
 
             <Modal.Header >
-                  <Modal.Title>Adicionar Alunas(os) no encontro - "{titulo_encontro}"</Modal.Title>
+                  <Modal.Title>Adicionar Alunas no encontro - "{titulo_encontro}"</Modal.Title>
               </Modal.Header>
               <Modal.Body>
                     <Table striped bordered hover responsive="sm mb-2">
@@ -118,7 +118,7 @@ export default function AddAluno({idEncontro, tituloModal, modalAddOpen, showAdd
                         ))
                       ) : (
                           <tr>
-                            <td colSpan={5}>Não há alunos cadastrados...</td>
+                            <td colSpan={5}>Não há alunas cadastradas...</td>
                           </tr>
                       )}
                       </tbody>

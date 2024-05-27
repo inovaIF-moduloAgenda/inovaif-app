@@ -56,7 +56,7 @@ import { UserContext } from '../../Context/UserContext.jsx'
         <Col className='mt-5 d-flex flex-column align-items-center justify-content-center'>
         <div className='' >
             <h3 className='h3-home'>Sua Agenda</h3>
-            <p className='mt-4 ps-1 p-home'>No sistema InovaIF, temos a funcionalidade que permite aos estudantes visualizarem rapidamente os encontros iminentes, facilitando a preparação e a coordenação de suas agendas. Confira os próximos encontros no botão abaixo.</p>
+            <p className='mt-4 ps-1 p-home'>No sistema InovaIF, temos a funcionalidade que permite às estudantes visualizarem rapidamente os encontros iminentes, facilitando a preparação e a coordenação de suas agendas. Confira os próximos encontros no botão abaixo.</p>
             <div>
             <Button className="mt-2 btn2-home p-2 me-3" variant="success" href='/home/agenda'>Agenda dos Encontros Disponíveis</Button>
             <Button className="mt-2 btn2-home p-2 " variant="success" href='/home/agendaInscrito'>Agenda dos Encontros Inscritos</Button>

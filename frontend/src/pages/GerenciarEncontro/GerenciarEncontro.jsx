@@ -224,9 +224,9 @@ export default function GerenciarEncontro(){
                                 <th>Sala</th>
                                 <th>Data Início</th>
                                 <th width="80px">Horário</th>
-                                <th width="85px"> Se repete?</th>
-                                <th width="85px">Lista de inscritos</th>
-                                <th width="85px">Adicionar Aluna(o)</th>
+                                <th width="85px">Se repete?</th>
+                                <th width="85px">Lista de inscritas</th>
+                                <th width="85px">Adicionar Aluna</th>
                                 <th width="75px">Editar</th>
                                 <th width="75px">Excluir</th>
                                 </tr>
@@ -282,7 +282,7 @@ export default function GerenciarEncontro(){
                         />
                     </Tab>
 
-                  <Tab eventKey="lista"  title="Lista de Alunos Cadastrados">
+                  <Tab eventKey="lista"  title="Lista de Alunas(os) Cadastradas(os)">
                   
                     <Table striped bordered hover responsive="sm mt-4">
                       <thead>
