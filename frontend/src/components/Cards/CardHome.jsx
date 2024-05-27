@@ -82,7 +82,7 @@ const dataHoje = currentDate.toISOString().split('T')[0]; // Format the date as 
                     <ListGroup.Item className="px-1">Data: <span>{formatDate(encontro.data_inicio)}</span></ListGroup.Item>
                     <ListGroup.Item className="px-1">Horários: <span>{encontro.hora_inicio}</span> até <span>{encontro.hora_fim}</span></ListGroup.Item>
                     <ListGroup.Item className="px-1">Sala: <span>{encontro.sala}</span></ListGroup.Item>
-                    <ListGroup.Item className="px-1">Professora(o): <span>{encontro.nome_professora}</span></ListGroup.Item>
+                    <ListGroup.Item className="px-1">Professora: <span>{encontro.nome_professora}</span></ListGroup.Item>
                   </ListGroup>
                   <Button variant="danger" className='mt-2' onClick={() => removerInscricao(encontro.id_inscricao, encontro.hora_inicio)}>
                   <i className="bi bi-trash p-1"></i>
