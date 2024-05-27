@@ -139,7 +139,7 @@ export default function EncontrosInscritos(){
                               </ListGroup.Item>
                         
                             <ListGroup.Item className="px-1">Sala: <span>{inscrito.sala}</span></ListGroup.Item>
-                            <ListGroup.Item className="px-1">Professora(o): <span>{inscrito.nome_professora}</span></ListGroup.Item>
+                            <ListGroup.Item className="px-1">Professora: <span>{inscrito.nome_professora}</span></ListGroup.Item>
 
                           </ListGroup>
                           

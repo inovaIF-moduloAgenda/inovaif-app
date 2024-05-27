@@ -162,7 +162,7 @@ export default function EncontrosDisponivel(){
                               <span>: {encontro.repete!== "Não"? Number(encontro.repete) + 1 + " vezes": 1 + " vez"}</span></div>
                               
                               </ListGroup.Item>
-                              <ListGroup.Item className="px-1">Professora(o): <span>{encontro.nome_professora}</span></ListGroup.Item>
+                              <ListGroup.Item className="px-1">Professora: <span>{encontro.nome_professora}</span></ListGroup.Item>
 
                             </ListGroup>
                             

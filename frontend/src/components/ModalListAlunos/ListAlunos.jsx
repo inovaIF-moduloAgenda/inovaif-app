@@ -102,7 +102,7 @@ export default function ModalList({ show, setModalOpen, encontroId, infoModal, u
                             ))
                         ) : (
                                 <tr>
-                                  <td colSpan={5}>Não há inscritas nesse encontro...</td>
+                                  <td colSpan={5}>Não há alunas inscritas nesse encontro...</td>
                                 </tr>
                           )}
                       </tbody>

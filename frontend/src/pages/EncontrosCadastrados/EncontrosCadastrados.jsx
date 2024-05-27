@@ -101,8 +101,8 @@ export default function EncontrosCadastrados(){
                             <ListGroup.Item className="px-1">Data: <span>{formatDate(encontro.data_inicio)}</span></ListGroup.Item>
                             <ListGroup.Item className="px-1">Horários: <span>{encontro.hora_inicio}</span> até <span>{encontro.hora_fim}</span></ListGroup.Item>
                             <ListGroup.Item className="px-1">Sala: <span>{encontro.sala}</span></ListGroup.Item>
-                            <ListGroup.Item className="px-1">Professora(o): <span>{encontro.nome_professora}</span></ListGroup.Item>
-                            <ListGroup.Item className="px-1">Email professora(o): <span>{encontro.email}</span></ListGroup.Item>
+                            <ListGroup.Item className="px-1">Professora: <span>{encontro.nome_professora}</span></ListGroup.Item>
+                            <ListGroup.Item className="px-1">Email professora: <span>{encontro.email}</span></ListGroup.Item>
                           </ListGroup>
                         </Card.Body>
                         <Card.Footer className='d-flex justify-content-end card-header'> {index + 1} </Card.Footer>

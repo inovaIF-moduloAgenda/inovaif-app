@@ -282,7 +282,7 @@ export default function GerenciarEncontro(){
                         />
                     </Tab>
 
-                  <Tab eventKey="lista"  title="Lista de Alunas(os) Cadastradas(os)">
+                  <Tab eventKey="lista"  title="Lista de Alunas Cadastradas">
                   
                     <Table striped bordered hover responsive="sm mt-4">
                       <thead>
